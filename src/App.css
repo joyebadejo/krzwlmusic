@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,130 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App{
+  margin: 0;
+  padding: 0;
+  background-image: url("images/main_bg.jpg");
 }
+
+#main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+
+  /* display: flex; */
+
+  /* margin-top: 0px; */
+  background-color: rgba(0,0,0,0.55);
+  overflow-y: hidden;
+  
+}
+
+.vertCenter{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 55px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+#main a, #main a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+#main a:active{
+  color: #ccc;
+}
+
+.subPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#linksPage ul{
+
+}
+
+.toTop{
+  animation: .5s ease-in 0s slideToTop;
+}
+
+.subPageBox{
+  background-color: rgba(0,0,0,0.3);
+  margin-top: 15vh;
+  font-family: 'Times New Roman', Times, serif;
+
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: 50px;
+  
+}
+
+.slowFade{
+  animation: .75s ease-in  0s fadeIn;
+}
+
+.fade{
+  animation: .5s ease-in  0s fadeInFast;
+}
+
+.subPageBox h5{
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+.subPageBox li {
+  list-style: none;
+}
+
+@keyframes slideToTop {
+  from {
+    transform:translateY(42vh)
+  }
+  to {
+    transform:translateY(0vh)
+  }
+} 
+
+@keyframes fadeIn {
+  0% {
+    transform:scale(0.01) 
+  }
+
+  50% {
+    transform:scale(0.01) 
+  }
+
+  100% {
+    transform:scale(1) 
+  }
+}
+
+  @keyframes fadeInFast {
+    from {
+      transform:scale(0.01) 
+    }
+    to {
+      transform:scale(1) 
+    }
+} 
