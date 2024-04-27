@@ -41,13 +41,14 @@
   margin: 0;
   padding: 0;
   background-image: url("images/main_bg.jpg");
+  background-position: center;
 }
 
 #main {
   margin: 0;
   padding: 0;
   height: 100vh;
-  color: white;
+  color: #fff;
 
   /* display: flex; */
 
@@ -64,8 +65,8 @@
   align-items: center;
 }
 
-#main h4 {
-  padding: 0;
+#main h3 {
+  padding: 15px 0 0;
   margin: 0;
   font-size: 55px;
   font-family: 'Times New Roman', Times, serif;
@@ -99,41 +100,78 @@
 }
 
 .subPageBox{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
   margin-top: 15vh;
   font-family: 'Times New Roman', Times, serif;
-
-  text-decoration: none;
   list-style: none;
   text-align: center;
   padding: 0;
   letter-spacing: 2px;
   line-height: 50px;
-  
+  border-radius: 1em;
+  width: 30vw;
+  min-width: 300px;
+}
+
+.subPageBox ul {
+  margin: 0;
+  padding: 0 15px 0;
 }
 
 .slowFade{
   animation: .75s ease-in  0s fadeIn;
 }
 
-.fade{
+.fadeIn{
   animation: .5s ease-in  0s fadeInFast;
 }
 
+.subPage h4{
+  /* background-color: #eee; */
+  /* color: #000; */
+  margin: 0;
+  font-size: 25px;
+  padding: 13px 0 0;
+}
+
 .subPageBox h5{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100;
   padding: 0;
   margin: 0;
+  /* position: relative;
+  z-index: 10; */
 }
 
 .subPageBox li {
   list-style: none;
 }
 
-.playlist img{
+.playlist{
+  /* position: relative;
+  z-index: 1;
+  transform: translateY(-40px); */
+}
+
+.card{
+  background-color: rgba(0,0,0,0);
+}
+
+.card-body{
+  background-color: rgba(255,255,255,0.1);
+}
+
+.playlist img, .card-body img{
   /* border-radius: 1em; */
-  width: 150px;
+  width: 120px;
+  padding: 0 3px;
+  /* visibility: hidden; */
+
+}
+
+#worksPage #accordion button{
+  /* text-decoration: none; */
+  color: #fff;
 }
 
 @keyframes slideToTop {

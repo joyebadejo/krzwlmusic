@@ -25,7 +25,7 @@ function App() {
       content = <Contact setPage={setPage}/>
       break;
     default: 
-      content = <h4 className="vertCenter" onClick={()=>{setPage("links")}}>kurzweil.</h4>
+      content = <h3 className="vertCenter" onClick={()=>{setPage("links")}}>kurzweil.</h3>
       break;
   }
 
