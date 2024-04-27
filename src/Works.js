@@ -1,3 +1,6 @@
+import appleMusicLogo from './images/applemusic.svg';
+import spotifyLogo from './images/spotifyLogo.png';
+
 export default function Works (props){
 
     return(
@@ -8,14 +11,18 @@ export default function Works (props){
             <ul>
                 <li>
                     <div>Produced by Kurzweil</div>
-                    <div>
-                        <a href="https://music.apple.com/us/playlist/produced-by-kurzweil/pl.u-WMx3IE2avPZ">Apple Music</a>
+                    <div className="playlist">
+                        {/* <a className="playlist" href="https://music.apple.com/us/playlist/produced-by-kurzweil/pl.u-WMx3IE2avPZ"><img src={require('./images/applemusic.svg')} /></a>
+                    */}
+                        <a  href="https://music.apple.com/us/playlist/produced-by-kurzweil/pl.u-WMx3IE2avPZ"><img src={appleMusicLogo} /></a>
+                        <a href=""><img src={spotifyLogo}/></a>
                     </div>
                 </li>
                 <li>
                     <div>Mixed by Kurzweil</div>
-                    <div>
-                        <a href="https://music.apple.com/us/playlist/mixed-engineered-by-kurzweil/pl.u-oWEpf3JW0Kj">Apple Music</a>
+                    <div className="playlist">
+                        <a className="playlist" href="https://music.apple.com/us/playlist/mixed-engineered-by-kurzweil/pl.u-oWEpf3JW0Kj"> <img src={appleMusicLogo} /></a>
+                        <a href=""><img src={spotifyLogo}/></a>
                     </div>
                 </li>
                 <li>

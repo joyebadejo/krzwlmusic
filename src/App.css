@@ -131,6 +131,11 @@
   list-style: none;
 }
 
+.playlist img{
+  /* border-radius: 1em; */
+  width: 150px;
+}
+
 @keyframes slideToTop {
   from {
     transform:translateY(42vh)
